@@ -418,6 +418,7 @@ a:hover {
 .btn-premium {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 1rem 2.25rem;
   font-family: var(--font-heading);
