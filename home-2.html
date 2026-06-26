@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Premium Typography-Focused Brand Designer</title>
+  <meta name="description" content="Minimalist, design-first brand identity designer crafting premium typography, color scales, logo systems, and brand strategy for ambitious agencies and startups.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  
+  <!-- Theme Toggle Fast Execution -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">AURA<span class="logo-dot"></span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+        <!-- Navigation Bar -->
+  <header class="custom-navbar" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="logo">
+        AURA<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled gap-lg-4 m-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+            <ul class="nav-dropdown">
+              <li class="nav-dropdown-item"><a href="index.html">Home 1 (Editorial)</a></li>
+              <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Minimal)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile Actions Drawer Version -->
+        <div class="mobile-menu-actions">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction" id="rtl-toggle">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme" id="theme-toggle">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Minimalist Split Hero -->
+    <section class="section d-flex align-items-center min-vh-100 position-relative pt-5 pb-5" id="minimal-hero">
+      <div class="container pt-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="tagline-accent hero-reveal hero-pre">AURA BRAND STUDIO</span>
+            <h1 class="hero-title hero-reveal mt-2 mb-4 font-heading fw-bold" style="font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.05;">Engineering core visual logic.</h1>
+            <p class="hero-desc hero-reveal fs-5 text-secondary pe-lg-5">We are a strategy-led design partner for high-growth tech companies and design-conscious startups. We translate brand mission into rigorous visual components: grids, typography scales, color theories, and guidelines.</p>
+            <div class="hero-actions hero-reveal d-flex gap-4 align-items-center mt-5">
+              <a href="discovery-call.html" class="btn-premium btn-premium-primary">Start Your Project</a>
+              <a href="services.html" class="link-editorial">Our Framework â†’</a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <div class="reveal-wrapper rounded overflow-hidden">
+              <div class="reveal-overlay"></div>
+              <img src="assets/images/workspace/studio.jpg" alt="Premium meeting workspace setup" class="img-fluid w-100" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo / Clients Strip -->
+    <section class="section pt-3 pb-3 border-top border-bottom bg-surface" id="clients-strip">
+      <div class="container">
+        <div class="row align-items-center justify-content-between text-center text-md-start g-4">
+          <div class="col-md-2"><span class="text-secondary uppercase tracking-widest fs-7">TRUSTED BY:</span></div>
+          <div class="col-md-2 col-6"><h4 class="mb-0 text-center font-heading fw-bold opacity-50">VEKTOR</h4></div>
+          <div class="col-md-2 col-6"><h4 class="mb-0 text-center font-heading fw-bold opacity-50">ORIGIN.S</h4></div>
+          <div class="col-md-2 col-6"><h4 class="mb-0 text-center font-heading fw-bold opacity-50">NOMAD.CO</h4></div>
+          <div class="col-md-2 col-6"><h4 class="mb-0 text-center font-heading fw-bold opacity-50">AETHERIA</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Interactive Services -->
+    <section class="section" id="disciplines">
+      <div class="container">
+        
+        <!-- Section Heading at top of section start -->
+        <div class="large-title-block text-center animate-fade-up">
+          <span class="tagline-accent">OUR SERVICES</span>
+          <h2>Brand design disciplines.</h2>
+          <p class="text-secondary mt-3 mx-auto" style="max-width: 680px;">We provide complete design support from discovery phase to final logo files delivery and web style guides.</p>
+        </div>
+
+        <div class="touching-cards-grid animate-fade-up mt-5">
+          <!-- Service 1 -->
+          <div class="glass-card">
+            <span class="fs-7 font-heading fw-bold text-secondary uppercase">01 / TYPOGRAPHY ARCHITECTURE</span>
+            <h3 class="mt-2 mb-3">Custom Typographic Scales & Rules</h3>
+            <p>We source, license, and configure fonts to express your unique company voice across websites, applications, packaging, and print media, setting precise size hierarchies.</p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Font Selection</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Rhythm Mapping</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Web Setup</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="glass-card">
+            <span class="fs-7 font-heading fw-bold text-secondary uppercase">02 / LOGO SYSTEMS</span>
+            <h3 class="mt-2 mb-3">Responsive Visual Symbols</h3>
+            <p>A logo must scale seamlessly from favicon to large billboards. We design responsive logo marks and vector lockups that remain legible and impactful in all formats.</p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Vector Icons</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Scalability Audits</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Favicons</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="glass-card">
+            <span class="fs-7 font-heading fw-bold text-secondary uppercase">03 / COLOR SYSTEMS</span>
+            <h3 class="mt-2 mb-3">High-Contrast Color Architecture</h3>
+            <p>We construct color systems defined by high readability ratios. We audit palettes for both light/dark interfaces and specify primary, secondary, and highlight tokens.</p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">Contrast Ratios</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">RGB / CMYK Mapping</span>
+              <span class="badge bg-light text-dark p-2 rounded-sm font-heading fs-7">HSL Scale Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="services.html" class="link-editorial">View Full Details â†’</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elegant Alternate Work Row -->
+    <section class="section border-top bg-surface" id="editorial-showcase">
+      <div class="container">
+        <div class="editorial-header text-center animate-fade-up">
+          <span class="tagline-accent">SELECTED PROJECTS</span>
+          <h2 class="mt-2">Corporate Identity Systems</h2>
+        </div>
+        
+        <div class="row g-4 mt-4 align-items-center">
+          <div class="col-lg-6 animate-fade-up">
+            <div class="reveal-wrapper rounded overflow-hidden">
+              <div class="reveal-overlay"></div>
+              <img src="assets/images/portfolio/project-1.jpg" alt="Minimal branding layouts" class="img-fluid w-100" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6 animate-fade-up">
+            <span class="portfolio-category">REBRAND & SYSTEM</span>
+            <h3 class="mb-3">Aetheria Logistics Rebrand</h3>
+            <p>Creating a streamlined aesthetic for a global transport partner. We structured a typography scheme, a custom-drawn wordmark, and clean container layouts.</p>
+            <a href="case-study-details.html" class="link-editorial mt-3">Read Full Case Study â†’</a>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-5 align-items-center flex-row-reverse">
+          <div class="col-lg-6 animate-fade-up">
+            <div class="reveal-wrapper rounded overflow-hidden">
+              <div class="reveal-overlay"></div>
+              <img src="assets/images/portfolio/project-2.jpg" alt="Clean skin-care packaging mockups" class="img-fluid w-100" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6 animate-fade-up">
+            <span class="portfolio-category">PACKAGING IDENTITY</span>
+            <h3 class="mb-3">Origin Skincare Packaging</h3>
+            <p>Developing structural box wraps, bottle guidelines, and product labels using minimalist, editorial warm grays and golds.</p>
+            <a href="case-study-details.html" class="link-editorial mt-3">Read Full Case Study â†’</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Pricing Consultation CTA -->
+    <section class="section" id="pricing-consult">
+      <div class="container text-center animate-fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="tagline-accent">PROJECT BOOKING</span>
+            <h2 class="mt-2 mb-4">Book your complimentary visual audit.</h2>
+            <p class="mb-5 text-secondary">Let's hop on a call to review your current brand assets, evaluate typography accessibility, and outline visual improvements.</p>
+            <a href="discovery-call.html" class="btn-premium btn-premium-primary">Book Discovery Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer" id="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo">AURA<span class="logo-dot"></span></div>
+            <p class="footer-text">Editorial brand identity systems built for founders, premium agencies, and startups seeking market leadership.</p>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 offset-lg-1">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Visual Identity Systems</a></li>
+            <li><a href="service-details.html">Logo Design & Systems</a></li>
+            <li><a href="service-details.html">Typography Strategy</a></li>
+            <li><a href="service-details.html">Color Architecture</a></li>
+            <li><a href="service-details.html">Brand Guideline Delivery</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="case-studies.html">Portfolio Work</a></li>
+            <li><a href="brand-guidelines.html">Guidelines Demo</a></li>
+            <li><a href="blog.html">Branding Insights</a></li>
+            <li><a href="discovery-call.html">Book Discovery Call</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Subscribe</h5>
+          <p class="footer-text mb-4">Receive 'The Brand Dispatch'â€”a monthly design strategy essay directly in your inbox.</p>
+          <form class="newsletter-form position-relative" id="footer-newsletter">
+            <input type="email" class="form-input pe-5" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn-arrow position-absolute" style="right: 1.25rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--color-accent); font-weight: bold; font-size: 1.2rem;" aria-label="Submit newsletter form">â†’</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Aura Studio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Interactive Brand Guidelines & Style Book</title>
+  <meta name="description"
+    content="View our interactive brand guidelines. Learn logo placement rules, typography constraints, spacing definitions, and copy HSL/HEX color codes.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- Theme Toggle Fast Execution -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">AURA<span class="logo-dot"></span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+        <!-- Navigation Bar -->
+  <header class="custom-navbar" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="logo">
+        AURA<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled gap-lg-4 m-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+            <ul class="nav-dropdown">
+              <li class="nav-dropdown-item"><a href="index.html">Home 1 (Editorial)</a></li>
+              <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Minimal)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile Actions Drawer Version -->
+        <div class="mobile-menu-actions">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction" id="rtl-toggle">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme" id="theme-toggle">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Guidelines Header -->
+    <section class="section pb-4 pt-5 mt-5" id="guidelines-hero">
+      <div class="container pt-5">
+        <div class="editorial-header animate-fade-up text-center">
+          <span class="tagline-accent">DESIGN SYSTEM DIRECTIVES</span>
+          <h1 class="mb-3">Master brand style guidelines.</h1>
+          <p class="fs-5 text-secondary mx-auto" style="max-width: 720px;">Review the architectural guidelines
+            constructed to govern the AURA identity system. This page serves as a model of the asset packs provided to
+            our enterprise clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Identity Overview -->
+    <section class="section pt-0" id="guidelines-overview">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 animate-fade-up">
+            <h3>Visual System Integrity</h3>
+            <p>To preserve visual consistency, all marketing collateral, UI platforms, packaging lines, and print
+              publications must align with the layout grids and spacing tokens outlined below. No modifications to logo
+              forms, font heights, or color codes are permitted.</p>
+            <p class="text-secondary">If you are a vendor or developer implementing these assets, please coordinate with
+              AURA's headshot team to request access to the asset repository containing clean SVG files.</p>
+          </div>
+          <div class="col-lg-6 animate-fade-up">
+            <div class="reveal-wrapper rounded overflow-hidden" style="width: 100%; height: 260px; position: relative;">
+              <div class="reveal-overlay"></div>
+              <img src="assets/images/guidelines/logo-use.jpg" alt="Logo guideline layout specs" class="w-100 h-100"
+                style="object-fit: cover;" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Rules (Do's & Don'ts) -->
+    <section class="section border-top bg-surface" id="logo-rules">
+      <div class="container">
+        <div class="large-title-block text-center animate-fade-up">
+          <span class="tagline-accent">LOGO APPLICATION</span>
+          <h2>Clear Space & Prohibitions</h2>
+        </div>
+
+        <div class="row g-4 mt-5 animate-fade-up">
+          <!-- Col 1: Clear Space -->
+          <div class="col-lg-4">
+            <div class="p-4 border bg-white h-100"
+              style="border-color: var(--border-color) !important; border-radius: var(--border-radius-sm);">
+              <h4 class="mb-3">01 / Clear Space Rule</h4>
+              <p>The AURA logo mark requires a minimum exclusion zone of <b>X-height</b> (equivalent to the height of
+                the letter 'A' in the mark) on all sides. Do not allow surrounding icons, banners to intersect this
+                perimeter.</p>
+            </div>
+          </div>
+          <!-- Col 2: Right Usage -->
+          <div class="col-lg-4">
+            <div class="p-4 border bg-white h-100"
+              style="border-color: var(--color-accent) !important; border-radius: var(--border-radius-sm);">
+              <span class="badge bg-success text-white mb-3">CORRECT USE</span>
+              <h3 class="font-heading mb-3">AURA<span class="logo-dot"></span></h3>
+              <p class="fs-7 text-secondary">The logo must render in flat black (#111827) on light backgrounds, or white
+                (#FFFFFF) on dark surfaces. The dot must maintain the creative purple accent color.</p>
+            </div>
+          </div>
+          <!-- Col 3: Wrong Usage -->
+          <div class="col-lg-4">
+            <div class="p-4 border bg-white h-100"
+              style="border-color: var(--border-color) !important; border-radius: var(--border-radius-sm); opacity: 0.7;">
+              <span class="badge bg-danger text-white mb-3">PROHIBITED USE</span>
+              <h3 class="font-heading mb-3 text-secondary" style="letter-spacing: 0.4em; transform: skewX(15deg);">A U R
+                A</h3>
+              <p class="fs-7 text-secondary">Do not stretch characters, skew vertical bounds, change font styles, or
+                apply color gradients to the primary letterforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Scheme Copy Portal -->
+    <section class="section border-top" id="color-copier">
+      <div class="container">
+        <div class="large-title-block text-center animate-fade-up">
+          <span class="tagline-accent">INTERACTIVE PALETTE</span>
+          <h2>Color Tokens Copier</h2>
+          <p class="text-secondary mt-3">Hover and click any block below to copy the HEX token values. Paste directly in
+            your CSS files.</p>
+        </div>
+
+        <div class="brand-palette-grid mt-5 animate-fade-up">
+          <!-- Swatch 1 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #111827;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Designer Black</div>
+              <div class="color-swatch-hex">#111827</div>
+            </div>
+          </div>
+
+          <!-- Swatch 2 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #6B7280;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Warm Gray</div>
+              <div class="color-swatch-hex">#6B7280</div>
+            </div>
+          </div>
+
+          <!-- Swatch 3 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #7C3AED;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Creative Purple</div>
+              <div class="color-swatch-hex">#7C3AED</div>
+            </div>
+          </div>
+
+          <!-- Swatch 4 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #F59E0B;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Gold Accent</div>
+              <div class="color-swatch-hex">#F59E0B</div>
+            </div>
+          </div>
+
+          <!-- Swatch 5 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #FAFAFA;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Off White Background</div>
+              <div class="color-swatch-hex">#FAFAFA</div>
+            </div>
+          </div>
+
+          <!-- Swatch 6 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #030712;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Dark Mode BG</div>
+              <div class="color-swatch-hex">#030712</div>
+            </div>
+          </div>
+
+          <!-- Swatch 7 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #FFFFFF;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Surface White</div>
+              <div class="color-swatch-hex">#FFFFFF</div>
+            </div>
+          </div>
+
+          <!-- Swatch 8 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #9CA3AF;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Accessible Gray</div>
+              <div class="color-swatch-hex">#9CA3AF</div>
+            </div>
+          </div>
+
+          <!-- Swatch 9 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #8B5CF6;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Vibrant Violet</div>
+              <div class="color-swatch-hex">#8B5CF6</div>
+            </div>
+          </div>
+
+          <!-- Swatch 10 -->
+          <div class="color-swatch">
+            <div class="color-swatch-display" style="background-color: #FBBF24;">
+              <span class="color-swatch-copy-badge">Copy HEX</span>
+            </div>
+            <div class="color-swatch-info">
+              <div class="color-swatch-name">Gold Contrast</div>
+              <div class="color-swatch-hex">#FBBF24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Specimen -->
+    <section class="section border-top bg-surface" id="typo-specs">
+      <div class="container">
+        <div class="large-title-block text-center animate-fade-up">
+          <span class="tagline-accent">TYPOGRAPHY SYSTEM</span>
+          <h2>Text Scales & Families</h2>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-6 animate-fade-up">
+            <div class="typo-specimen">
+              <div class="typo-name">Heading spec: Sora</div>
+              <div class="typo-letters font-heading">A B C D E F G</div>
+              <div class="typo-info">Headings must maintain a tracking letter space of <b>-0.03em</b> and <b>1.15 line
+                  height</b>. Use Sora Bold (700) for hero lines and Sora SemiBold (600) for card titles.</div>
+            </div>
+          </div>
+          <div class="col-lg-6 animate-fade-up">
+            <div class="typo-specimen">
+              <div class="typo-name">Body spec: Inter</div>
+              <div class="typo-letters font-body">a b c d e f g</div>
+              <div class="typo-info">Body paragraphs require Inter Light or Regular (300/400). Maintain a tracking space
+                of <b>0em</b> and a line height of <b>1.65 to 1.75</b> to guarantee readability.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Booking Call to Action -->
+    <section class="section border-top" id="guideline-booking">
+      <div class="container text-center animate-fade-up">
+        <span class="tagline-accent">NEED A CUSTOM DESIGN SYSTEM?</span>
+        <h2 class="mt-2 mb-4">Let's construct your brand guidelines.</h2>
+        <p class="text-secondary mx-auto mb-5" style="max-width: 600px;">AURA crafts comprehensive, digital design
+          guidelines that streamline how startup developer teams launch interfaces and publish articles.</p>
+        <a href="discovery-call.html" class="btn-premium btn-premium-primary">Secure a Project Spot</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer" id="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo">AURA<span class="logo-dot"></span></div>
+            <p class="footer-text">Editorial brand identity systems built for founders, premium agencies, and startups
+              seeking market leadership.</p>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 offset-lg-1">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Visual Identity Systems</a></li>
+            <li><a href="service-details.html">Logo Design & Systems</a></li>
+            <li><a href="service-details.html">Typography Strategy</a></li>
+            <li><a href="service-details.html">Color Architecture</a></li>
+            <li><a href="service-details.html">Brand Guideline Delivery</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="case-studies.html">Portfolio Work</a></li>
+            <li><a href="brand-guidelines.html">Guidelines Demo</a></li>
+            <li><a href="blog.html">Branding Insights</a></li>
+            <li><a href="discovery-call.html">Book Discovery Call</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Subscribe</h5>
+          <p class="footer-text mb-4">Receive 'The Brand Dispatch'â€”a monthly design strategy essay directly in your
+            inbox.</p>
+          <form class="newsletter-form position-relative" id="footer-newsletter">
+            <input type="email" class="form-input pe-5" placeholder="Your email address" required
+              aria-label="Email address">
+            <button type="submit" class="btn-arrow position-absolute"
+              style="right: 1.25rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--color-accent); font-weight: bold; font-size: 1.2rem;"
+              aria-label="Submit newsletter form">â†’</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Aura Studio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+</body>
+
+</html>
+
+

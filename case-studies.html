@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Brand Identity Case Studies Portfolio</title>
+  <meta name="description" content="Browse our selected portfolio of typography scales, packaging mockups, logo networks, and visual brand identity systems.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  
+  <style>
+    /* Portfolio Filter Styling */
+    .filter-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 3.5rem 0;
+    }
+    
+    .filter-btn {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      border: none;
+      background: none;
+      padding: 0.5rem 0;
+      cursor: pointer;
+      position: relative;
+      transition: var(--transition-fast);
+    }
+    
+    .filter-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-primary);
+      transition: var(--transition-fast);
+    }
+    
+    .filter-btn.active {
+      color: var(--text-primary);
+    }
+    
+    .filter-btn.active::after {
+      width: 100%;
+    }
+  </style>
+
+  <!-- Theme Toggle Fast Execution -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">AURA<span class="logo-dot"></span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+        <!-- Navigation Bar -->
+  <header class="custom-navbar" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="logo">
+        AURA<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled gap-lg-4 m-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+            <ul class="nav-dropdown">
+              <li class="nav-dropdown-item"><a href="index.html">Home 1 (Editorial)</a></li>
+              <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Minimal)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile Actions Drawer Version -->
+        <div class="mobile-menu-actions">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction" id="rtl-toggle">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme" id="theme-toggle">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Case Studies Title -->
+    <section class="section pb-4 pt-5 mt-5" id="case-studies-hero">
+      <div class="container pt-5">
+        <div class="editorial-header animate-fade-up text-center">
+          <span class="tagline-accent">ARCHIVE</span>
+          <h1 class="mb-3">Strategic identity case studies.</h1>
+          <p class="fs-5 text-secondary mx-auto" style="max-width: 720px;">A detailed collection of systems engineered to resolve visual inconsistencies, support seed fundraising, and deliver cohesive styling guidelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters and Portfolio Grid -->
+    <section class="section pt-0" id="case-studies-grid-section">
+      <div class="container">
+        
+        <!-- Filter Navigation -->
+        <ul class="filter-list animate-fade-up">
+          <li><button class="filter-btn active" data-filter="all">All Projects</button></li>
+          <li><button class="filter-btn" data-filter="identity">Identity Systems</button></li>
+          <li><button class="filter-btn" data-filter="packaging">Packaging</button></li>
+          <li><button class="filter-btn" data-filter="typography">Typography</button></li>
+          <li><button class="filter-btn" data-filter="rebrand">Rebrands</button></li>
+        </ul>
+        
+        <!-- Case Studies List -->
+        <div class="portfolio-grid staggered-grid">
+          <!-- Card 1 -->
+          <div class="portfolio-card grid-item-animate" data-category="typography">
+            <a href="case-study-details.html">
+              <div class="portfolio-img-wrapper">
+                <img src="assets/images/portfolio/project-1.jpg" alt="Aetheria branding mockup stationery" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-meta">
+              <div class="portfolio-category">Typography & Rebrand</div>
+              <h3 class="portfolio-title"><a href="case-study-details.html">Aetheria Logistics</a></h3>
+              <p class="m-0 text-secondary">Custom typographic hierarchies for a modern distribution and freight network.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="portfolio-card grid-item-animate" data-category="packaging">
+            <a href="case-study-details.html">
+              <div class="portfolio-img-wrapper">
+                <img src="assets/images/portfolio/project-2.jpg" alt="Origin skincare packaging mockups" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-meta">
+              <div class="portfolio-category">Packaging & Materials</div>
+              <h3 class="portfolio-title"><a href="case-study-details.html">Origin Skincare</a></h3>
+              <p class="m-0 text-secondary">Minimalist box wrappings and containers leveraging neutral color systems.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="portfolio-card grid-item-animate" data-category="identity">
+            <a href="case-study-details.html">
+              <div class="portfolio-img-wrapper">
+                <img src="assets/images/portfolio/project-3.jpg" alt="Vektor fintech typography curves poster" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-meta">
+              <div class="portfolio-category">Identity Systems</div>
+              <h3 class="portfolio-title"><a href="case-study-details.html">Vektor Fintech</a></h3>
+              <p class="m-0 text-secondary">High-contrast visual parameters constructed for digital payment applications.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="portfolio-card grid-item-animate" data-category="rebrand">
+            <a href="case-study-details.html">
+              <div class="portfolio-img-wrapper">
+                <img src="assets/images/portfolio/project-4.jpg" alt="Nomad studio sketches and workspace styling" loading="lazy">
+              </div>
+            </a>
+            <div class="portfolio-meta">
+              <div class="portfolio-category">Corporate Rebrands</div>
+              <h3 class="portfolio-title"><a href="case-study-details.html">Nomad Creative Studio</a></h3>
+              <p class="m-0 text-secondary">A visual redesign to project design strategy, audits, and style guide templates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="section border-top bg-surface" id="work-cta">
+      <div class="container text-center animate-fade-up">
+        <span class="tagline-accent">LET'S COLLABORATE</span>
+        <h2 class="mt-2 mb-4">Start your brand identity transformation.</h2>
+        <p class="text-secondary mx-auto mb-5" style="max-width: 580px;">We collaborate with founders to translate strategic visions into production-ready visual systems.</p>
+        <a href="discovery-call.html" class="btn-premium btn-premium-primary">Request a Design Proposal</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer" id="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo">AURA<span class="logo-dot"></span></div>
+            <p class="footer-text">Editorial brand identity systems built for founders, premium agencies, and startups seeking market leadership.</p>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 offset-lg-1">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Visual Identity Systems</a></li>
+            <li><a href="service-details.html">Logo Design & Systems</a></li>
+            <li><a href="service-details.html">Typography Strategy</a></li>
+            <li><a href="service-details.html">Color Architecture</a></li>
+            <li><a href="service-details.html">Brand Guideline Delivery</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="case-studies.html">Portfolio Work</a></li>
+            <li><a href="brand-guidelines.html">Guidelines Demo</a></li>
+            <li><a href="blog.html">Branding Insights</a></li>
+            <li><a href="discovery-call.html">Book Discovery Call</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Subscribe</h5>
+          <p class="footer-text mb-4">Receive 'The Brand Dispatch'â€”a monthly design strategy essay directly in your inbox.</p>
+          <form class="newsletter-form position-relative" id="footer-newsletter">
+            <input type="email" class="form-input pe-5" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="btn-arrow position-absolute" style="right: 1.25rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--color-accent); font-weight: bold; font-size: 1.2rem;" aria-label="Submit newsletter form">â†’</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Aura Studio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+  <!-- Local filtering implementation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filters = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.portfolio-card');
+      
+      filters.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          // Toggle active class
+          filters.forEach(f => f.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filterVal = btn.getAttribute('data-filter');
+          
+          cards.forEach(card => {
+            if (filterVal === 'all') {
+              card.style.display = 'block';
+              card.style.opacity = '1';
+            } else {
+              const cat = card.getAttribute('data-category');
+              if (cat === filterVal) {
+                card.style.display = 'block';
+                card.style.opacity = '1';
+              } else {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+

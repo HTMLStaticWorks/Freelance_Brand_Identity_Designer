@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Brand Identity Services & FAQ</title>
+  <meta name="description"
+    content="Explore our visual brand identity services, typographic systems, color scales development, guideline creation, and interactive deliverables table.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+
+  <!-- Theme Toggle Fast Execution -->
+  <script src="assets/js/theme-toggle.js"></script>
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-logo">AURA<span class="logo-dot"></span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+        <!-- Navigation Bar -->
+  <header class="custom-navbar" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="navbar-logo" id="logo">
+        AURA<span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled gap-lg-4 m-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+            <ul class="nav-dropdown">
+              <li class="nav-dropdown-item"><a href="index.html">Home 1 (Editorial)</a></li>
+              <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Minimal)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Mobile Actions Drawer Version -->
+        <div class="mobile-menu-actions">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <button class="rtl-toggle-btn" aria-label="Toggle layout direction" id="rtl-toggle">RTL</button>
+          <button class="theme-toggle-btn" aria-label="Toggle visual theme" id="theme-toggle">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24">
+              <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.02.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24">
+              <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Services Header -->
+    <section class="section pb-4 pt-5 mt-5" id="services-hero">
+      <div class="container pt-5">
+        <div class="editorial-header animate-fade-up text-center">
+          <span class="tagline-accent">OUR CAPABILITIES</span>
+          <h1 class="mb-3">Design systems that command authority.</h1>
+          <p class="fs-5 text-secondary mx-auto" style="max-width: 720px;">We translate strategy into clean visual
+            assets, establishing typography rules, layout hierarchies, and brand guidelines for market-leading
+            enterprises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section pt-0" id="services-showcase">
+      <div class="container">
+        <div class="row g-4 staggered-grid">
+          <!-- Service 1 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">01 / BRAND STRATEGY</span>
+              <h3 class="mt-2 mb-3">Competitive Positioning</h3>
+              <p>We dissect your market sector to identify design gaps, analyze competitor style choices, establish core
+                visual pillars, and outline a robust styling roadmap before executing logos.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">02 / LOGO SYSTEMS</span>
+              <h3 class="mt-2 mb-3">Scalable Vector Wordmarks</h3>
+              <p>We create responsive logo networks including vertical lockups, compact marks, and lettermarks. We
+                rigorously test legibility under high zoom levels and tiny formats.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">03 / TYPOGRAPHY ARCHITECTURE</span>
+              <h3 class="mt-2 mb-3">Accessible Type Hierarchy</h3>
+              <p>Selecting font families that sync with your brand values. We set rules for headings, body text,
+                contrast thresholds, and provide ready-to-use CSS font integration tokens.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">04 / COLOR SCHEMES</span>
+              <h3 class="mt-2 mb-3">Contrast-Compliant Palettes</h3>
+              <p>Designing sophisticated, memorable color profiles. We audit palettes against WCAG AAA accessibility
+                thresholds, defining color tokens for light and dark environments.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">05 / REBRAND PROJECTS</span>
+              <h3 class="mt-2 mb-3">Legacy Asset Migrations</h3>
+              <p>Modernizing legacy corporate logos without losing brand equity. We simplify lines, correct structural
+                imbalances, and align colors to modern screens.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 grid-item-animate">
+            <div class="glass-card h-100">
+              <span class="text-secondary font-heading fw-bold fs-7 uppercase">06 / STYLE GUIDELINES</span>
+              <h3 class="mt-2 mb-3">Interactive Brand Style Books</h3>
+              <p>Delivering complete documentation of brand rules, grid frameworks, image treatments, and asset archives
+                so developer teams can deploy pages without questions.</p>
+              <a href="service-details.html" class="link-editorial mt-3">Dissect Process â†’</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables Table -->
+    <section class="section border-top bg-surface" id="deliverables-table">
+      <div class="container">
+        <div class="large-title-block text-center animate-fade-up">
+          <span class="tagline-accent">DELIVERABLES MATRIX</span>
+          <h2>Clear scopes, zero surprises.</h2>
+          <p class="text-secondary mt-3 mx-auto" style="max-width: 600px;">Compare how we pack and distribute our final
+            visual design system deliverables for your developer and print partners.</p>
+        </div>
+
+        <div class="table-responsive animate-fade-up mt-5">
+          <table class="table"
+            style="color: var(--text-primary); border-color: var(--border-color); font-family: var(--font-body); width: 100%;">
+            <thead>
+              <tr
+                style="border-bottom: 2px solid var(--text-primary); font-family: var(--font-heading); font-weight: 700;">
+                <th style="padding: 1.5rem 1rem;">Asset Class</th>
+                <th style="padding: 1.5rem 1rem;">Included Formats</th>
+                <th style="padding: 1.5rem 1rem;">Primary Use-Case</th>
+                <th style="padding: 1.5rem 1rem; text-align: right;">Distribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.5rem 1rem; font-weight: 600;">Logo Systems</td>
+                <td style="padding: 1.5rem 1rem;">SVG, EPS, PDF, High-Res PNG</td>
+                <td style="padding: 1.5rem 1rem;">Web, print, packaging, collateral</td>
+                <td style="padding: 1.5rem 1rem; text-align: right; color: var(--color-accent); font-weight: 600;">
+                  Vector Package</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.5rem 1rem; font-weight: 600;">Typography Schemes</td>
+                <td style="padding: 1.5rem 1rem;">WOFF2, OTF, TTF files, CSS configurations</td>
+                <td style="padding: 1.5rem 1rem;">Web styling, corporate slide decks</td>
+                <td style="padding: 1.5rem 1rem; text-align: right; color: var(--color-accent); font-weight: 600;">
+                  Licensed Archive</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.5rem 1rem; font-weight: 600;">Color Tokens</td>
+                <td style="padding: 1.5rem 1rem;">HEX, RGB, CMYK, HSL, CSS vars</td>
+                <td style="padding: 1.5rem 1rem;">UI coding, packaging color print checks</td>
+                <td style="padding: 1.5rem 1rem; text-align: right; color: var(--color-accent); font-weight: 600;">
+                  Digital Palette Sheets</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1.5rem 1rem; font-weight: 600;">Guidelines Document</td>
+                <td style="padding: 1.5rem 1rem;">Interactive HTML portal, PDF layout printbook</td>
+                <td style="padding: 1.5rem 1rem;">Internal onboarding, developer training</td>
+                <td style="padding: 1.5rem 1rem; text-align: right; color: var(--color-accent); font-weight: 600;">Web
+                  URL + PDF</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section border-top" id="faqs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0 animate-fade-up">
+            <span class="tagline-accent">FAQ</span>
+            <h2>Answering strategy & process queries.</h2>
+            <p class="mt-4 text-secondary">Find clarity on project schedules, costs, assets, and design ownership
+              systems.</p>
+            <a href="contact.html" class="link-editorial mt-3">Still have questions? Contact me â†’</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="faq-accordion" id="faq-accord">
+              <!-- Item 1 -->
+              <div class="faq-item">
+                <button class="faq-question">
+                  <h4>What is the typical timeframe for a full rebrand?</h4>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p class="mb-0">A comprehensive visual identity project (discovery, color strategy, typography
+                      pairing, logo systems, and style guide delivery) typically spans 4 to 6 weeks. Simple logo
+                      revisions or identity updates can be completed in 3 weeks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="faq-item">
+                <button class="faq-question">
+                  <h4>Do you build full websites, or just design the assets?</h4>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p class="mb-0">We focus on brand strategy, visual direction, and high-fidelity front-end designs
+                      (HTML/CSS templates). We coordinate directly with your software engineering team, supplying them
+                      with clean Figma layouts, semantic code blocks, CSS variables, and organized SVG vector libraries.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="faq-item">
+                <button class="faq-question">
+                  <h4>How are client payments structured?</h4>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p class="mb-0">Project fees are structured on a milestone basis: 50% deposit to confirm dates and
+                      initiate strategy audits, and 50% upon final delivery of all approved branding packages, guides,
+                      and typography files.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="faq-item">
+                <button class="faq-question">
+                  <h4>Who owns the final design copyrights?</h4>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p class="mb-0">Once the final milestone invoice is settled, full intellectual property and
+                      copyrights for the logos, visual files, guidelines, and templates transfer completely to the
+                      client. Font licenses are registered to the client's entity directly during purchase.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer" id="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-logo">AURA<span class="logo-dot"></span></div>
+            <p class="footer-text">Editorial brand identity systems built for founders, premium agencies, and startups
+              seeking market leadership.</p>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 offset-lg-1">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html">Visual Identity Systems</a></li>
+            <li><a href="service-details.html">Logo Design & Systems</a></li>
+            <li><a href="service-details.html">Typography Strategy</a></li>
+            <li><a href="service-details.html">Color Architecture</a></li>
+            <li><a href="service-details.html">Brand Guideline Delivery</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="case-studies.html">Portfolio Work</a></li>
+            <li><a href="brand-guidelines.html">Guidelines Demo</a></li>
+            <li><a href="blog.html">Branding Insights</a></li>
+            <li><a href="discovery-call.html">Book Discovery Call</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Subscribe</h5>
+          <p class="footer-text mb-4">Receive 'The Brand Dispatch'â€”a monthly design strategy essay directly in your
+            inbox.</p>
+          <form class="newsletter-form position-relative" id="footer-newsletter">
+            <input type="email" class="form-input pe-5" placeholder="Your email address" required
+              aria-label="Email address">
+            <button type="submit" class="btn-arrow position-absolute"
+              style="right: 1.25rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--color-accent); font-weight: bold; font-size: 1.2rem;"
+              aria-label="Submit newsletter form">â†’</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Aura Studio. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+</body>
+
+</html>
+
+
