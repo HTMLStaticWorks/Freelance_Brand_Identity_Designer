@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura Studio | Interactive Brand Guidelines & Style Book</title>
+  <title>Aura | Interactive Brand Guidelines & Style Book</title>
   <meta name="description"
-    content="View our interactive brand guidelines. Learn logo placement rules, typography constraints, spacing definitions, and copy HSL/HEX color codes.">
+    content="View my interactive brand guidelines. Learn logo placement rules, typography constraints, spacing definitions, and copy HSL/HEX color codes.">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -38,16 +38,17 @@
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="d-flex flex-column flex-lg-row align-items-lg-center list-unstyled gap-lg-4 m-0">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+                    <li class="nav-item">
+            <a href="index.html" class="nav-link">Home <span class="nav-caret">▾</span></a>
             <ul class="nav-dropdown">
               <li class="nav-dropdown-item"><a href="index.html">Home 1 (Editorial)</a></li>
               <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Minimal)</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-          <li class="nav-item"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
+          <li class="nav-item active"><a href="brand-guidelines.html" class="nav-link">Brand Guidelines</a></li>
           <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -62,6 +63,7 @@
               <path d="M12.3 22c4.97 0 9-4.03 9-9 0-2.12-.74-4.07-1.97-5.61-.43-.54-1.16-.38-1.37.28C17.27 10.01 14.88 12 12 12c-2.88 0-5.27-1.99-5.96-4.33-.21-.66-.94-.82-1.37-.28C3.44 8.93 2.7 10.88 2.7 13c0 4.97 4.03 9 9 9z" />
             </svg>
           </button>
+          <a href="contact.html" class="btn-nav ms-3">Reach Me</a>
         </div>
       </nav>
 
@@ -77,6 +79,7 @@
             </svg>
           </button>
         </div>
+        <a href="contact.html" class="btn-nav d-none d-sm-inline-flex align-items-center">Reach Me</a>
         <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -96,7 +99,7 @@
           <h1 class="mb-3">Master brand style guidelines.</h1>
           <p class="fs-5 text-secondary mx-auto" style="max-width: 720px;">Review the architectural guidelines
             constructed to govern the AURA identity system. This page serves as a model of the asset packs provided to
-            our enterprise clients.</p>
+            my enterprise clients.</p>
         </div>
       </div>
     </section>
@@ -111,7 +114,7 @@
               publications must align with the layout grids and spacing tokens outlined below. No modifications to logo
               forms, font heights, or color codes are permitted.</p>
             <p class="text-secondary">If you are a vendor or developer implementing these assets, please coordinate with
-              AURA's headshot team to request access to the asset repository containing clean SVG files.</p>
+              me directly to request access to the asset repository containing clean SVG files.</p>
           </div>
           <div class="col-lg-6 animate-fade-up">
             <div class="reveal-wrapper rounded overflow-hidden" style="width: 100%; height: 260px; position: relative;">
@@ -373,12 +376,14 @@
           <h5 class="footer-heading">Subscribe</h5>
           <p class="footer-text mb-4">Receive 'The Brand Dispatch'&mdash;a monthly design strategy essay directly in your
             inbox.</p>
-          <form class="newsletter-form position-relative" id="footer-newsletter">
-            <input type="email" class="form-input pe-5" placeholder="Your email address" required
-              aria-label="Email address">
-            <button type="submit" class="btn-arrow position-absolute"
-              style="right: 1.25rem; top: 50%; transform: translateY(-50%); border: none; background: none; color: var(--color-accent); font-weight: bold; font-size: 1.2rem;"
-              aria-label="Submit newsletter form">&rarr;</button>
+                    <form class="newsletter-form" id="footer-newsletter">
+            <div class="newsletter-form-group">
+              <input type="email" class="form-input" placeholder="Your email address" required
+                aria-label="Email address">
+              <button type="submit" class="btn-subscribe" aria-label="Subscribe newsletter form">
+                Subscribe
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -387,10 +392,33 @@
       <div class="footer-bottom">
         <p class="footer-copy">&copy; 2026 Aura Studio. All rights reserved.</p>
         <div class="footer-socials">
-          <a href="#" target="_blank" rel="noopener">Behance</a>
-          <a href="#" target="_blank" rel="noopener">Dribbble</a>
-          <a href="#" target="_blank" rel="noopener">Instagram</a>
-          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Behance">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <path d="M12 16.5c0-2.5 1.5-4 4.5-4s4.5 1.5 4.5 4v.5h-9zm9-1.5c-.2-1.5-1.5-2.5-3-2.5s-2.8 1-3 2.5h6z"></path>
+              <path d="M2 5h7.5c1.8 0 3.3 1.2 3.3 3a2.7 2.7 0 0 1-2 2.7c1.4.5 2.2 1.6 2.2 3 0 2-1.5 3.3-3.5 3.3H2V5zm6.5 5.5c.8 0 1.5-.5 1.5-1.3 0-.7-.7-1.2-1.5-1.2H5v2.5h3.5zm.3 5.5c.8 0 1.7-.5 1.7-1.4 0-.8-.9-1.3-1.7-1.3H5V16h3.8z"></path>
+              <path d="M14 9h5"></path>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Dribbble">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.49-11.05 1-11.6 8.56"></path>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
