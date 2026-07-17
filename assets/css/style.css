@@ -703,6 +703,96 @@ a:hover {
   transform: translateX(6px);
 }
 
+/* Premium Offering Card for About Page Offerings */
+.premium-offering-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
+}
+
+.premium-offering-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: var(--transition-smooth);
+}
+
+.premium-offering-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(109, 40, 217, 0.2);
+  box-shadow: 0 20px 40px rgba(109, 40, 217, 0.08);
+}
+
+.premium-offering-card:hover::before {
+  transform: scaleY(1);
+}
+
+.premium-offering-card .card-num-badge {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background: rgba(109, 40, 217, 0.06);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+[data-theme="dark"] .premium-offering-card .card-num-badge {
+  background: rgba(167, 139, 250, 0.12);
+  color: var(--color-accent);
+}
+
+.premium-offering-card .card-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.premium-offering-card .card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Accent icon/decoration inside the card */
+.premium-offering-card .card-arrow {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: var(--transition-smooth);
+}
+
+.premium-offering-card:hover .card-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Portfolio Grid & Cards */
 .portfolio-grid {
   display: grid;
