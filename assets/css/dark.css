@@ -1,18 +1,18 @@
-/* Dark Mode Overrides and Styles */
+/* Dark Mode Overrides and High Contrast Styles */
 [data-theme="dark"] {
-  --bg-primary: #030712;
-  --bg-surface: #111827;
-  --text-primary: #F9FAFB;
-  --text-secondary: #9CA3AF; /* Accessible Warm Gray for dark mode readability */
-  --color-primary: #F9FAFB;
-  --color-secondary: #9CA3AF;
-  --color-accent: #8B5CF6; /* Vibrant violet-purple for dark contrast */
+  --bg-primary: #090D16;
+  --bg-surface: #131C2E;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1; /* High contrast slate light gray for dark mode readability (WCAG AAA) */
+  --color-primary: #F8FAFC;
+  --color-secondary: #CBD5E1;
+  --color-accent: #A78BFA;   /* Vibrant violet-purple for dark contrast */
   --color-highlight: #FBBF24; /* Accessible yellow-gold */
   
-  --border-color: rgba(249, 250, 251, 0.08);
-  --glass-bg: rgba(17, 24, 39, 0.65);
-  --glass-border: rgba(249, 250, 251, 0.08);
-  --glass-shadow: rgba(0, 0, 0, 0.3);
+  --border-color: rgba(248, 250, 252, 0.14);
+  --glass-bg: rgba(19, 28, 46, 0.85);
+  --glass-border: rgba(248, 250, 252, 0.14);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* Form focus adjustments */
